@@ -103,6 +103,16 @@ nav {
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
+        border: 1px solid var(--accent);
+        border-radius: 4px;
+        padding: 0.5rem 0.8rem;
+        color: var(--accent);
+        background: rgba(56, 189, 248, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .nav-toggle:hover {
+        background: rgba(56, 189, 248, 0.2);
     }
 
     .nav-links {
@@ -118,12 +128,18 @@ nav {
         gap: 1.5rem;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
     }
 
     .nav-links.active {
         display: flex;
         /* Show when active */
+    }
+
+    /* Hide the 01. 02. numbers on mobile for cleaner look */
+    .nav-links a span.text-accent {
+        display: none;
     }
 }
 
