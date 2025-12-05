@@ -122,7 +122,7 @@ nav {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--bg-primary);
+        background-color: var(--bg-dark);
         flex-direction: column;
         padding: 2rem;
         gap: 1.5rem;
